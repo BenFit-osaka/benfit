@@ -3,240 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー｜BenFit</title>
-    <meta name="description" content="BenFitのプライバシーポリシー（個人情報保護方針）です。">
-    
-    <!-- Google Fonts -->
+    <title>プライバシーポリシー｜BenFit フィットネス事業者の法務パートナー</title>
+    <meta name="description" content="BenFitにおける個人情報の取扱い。取得する情報、利用目的、外部サービスへの委託、Cookieとアクセス解析、開示等の請求の窓口について定めています。">
+    <meta property="og:site_name" content="BenFit">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="プライバシーポリシー｜BenFit フィットネス事業者の法務パートナー">
+    <meta property="og:description" content="BenFitにおける個人情報の取扱い。取得する情報、利用目的、外部サービスへの委託、Cookieとアクセス解析、開示等の請求の窓口について定めています。">
+    <meta property="og:url" content="https://benfit-osaka.github.io/benfit/privacy-policy.html">
+    <meta property="og:image" content="https://benfit-osaka.github.io/benfit/ogp.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://benfit-osaka.github.io/benfit/privacy-policy.html">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://benfit-osaka.github.io/benfit/"}, {"@type": "ListItem", "position": 2, "name": "プライバシーポリシー", "item": "https://benfit-osaka.github.io/benfit/privacy-policy.html"}]}</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNY9CC6DX9"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KNY9CC6DX9');</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
     <style>
-        :root {
-            --color-bg-primary: #0a0a0a;
-            --color-bg-secondary: #111111;
-            --color-bg-tertiary: #1a1a1a;
-            --color-gold: #d4a853;
-            --color-gold-light: #e8c878;
-            --color-text-primary: #ffffff;
-            --color-text-secondary: #a0a0a0;
-            --color-text-muted: #666666;
-            --color-border: #2a2a2a;
-            --font-display: 'Oswald', sans-serif;
-            --font-body: 'Noto Sans JP', sans-serif;
-            --spacing-xs: 0.5rem;
-            --spacing-sm: 1rem;
-            --spacing-md: 2rem;
-            --spacing-lg: 4rem;
-            --transition-fast: 0.2s ease;
+        :root{
+            --dark-bg:#0a0a0a;--dark-bg2:#111111;--dark-bg3:#1a1a1a;--dark-border:#2a2a2a;
+            --gold:#d4a853;--gold-light:#e8c878;--gold-dark:#b8922f;
+            --light-bg:#f7f5f0;--light-bg2:#ffffff;--light-border:#e3ded4;
+            --light-text:#1a1a1a;--light-text2:#555555;--light-muted:#888888;
+            --font-display:'Oswald',sans-serif;--font-body:'Noto Sans JP',sans-serif;
+        }
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        html{scroll-behavior:smooth}
+        body{font-family:var(--font-body);background:var(--dark-bg);color:#fff;line-height:1.8;font-size:16px;-webkit-font-smoothing:antialiased}
+        a{color:inherit}
+        .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
+        .section{padding:5rem 0}
+        .section-title{font-family:var(--font-body);font-weight:900;font-size:2rem;line-height:1.3;text-align:center;margin-bottom:.75rem}
+        .section-title::after{content:"";display:block;width:48px;height:3px;background:var(--gold);margin:1rem auto 0}
+        .section-dark{background:var(--dark-bg);color:#fff}
+        .section-light{background:var(--light-bg);color:var(--light-text)}
+        .section-light .section-title{color:var(--light-text)}
+        .section-light .section-title::after{background:var(--gold-dark)}
+
+        /* ヘッダー */
+        .header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,10,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--dark-border);transition:background .2s}
+        .header.scrolled{background:rgba(10,10,10,.97)}
+        .header-inner{max-width:1100px;margin:0 auto;padding:0 1.5rem;height:70px;display:flex;align-items:center;justify-content:space-between}
+        .logo{font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--gold);text-decoration:none;letter-spacing:.05em}
+        .nav-links{display:flex;align-items:center;gap:1.75rem;list-style:none}
+        .nav-links a{color:#e0e0e0;text-decoration:none;font-size:.9rem;font-weight:500;transition:color .2s}
+        .nav-links a:hover{color:var(--gold)}
+        .nav-links a.nav-cta{background:var(--gold);color:var(--dark-bg);padding:.55rem 1.25rem;border-radius:2px;font-weight:700}
+        .nav-links a.nav-cta:hover{background:var(--gold-light)}
+        .mobile-menu-btn{display:none;background:none;border:none;color:#fff;font-size:1.7rem;cursor:pointer;line-height:1}
+        @media(max-width:900px){
+            .nav-links{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;align-items:flex-start;background:#0a0a0a;padding:1.5rem;gap:1.25rem;border-bottom:1px solid var(--dark-border)}
+            .nav-links.open{display:flex}
+            .mobile-menu-btn{display:block}
         }
 
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        /* ヒーロー */
+        .hero{background:var(--dark-bg);padding:calc(70px + 5rem) 0 5rem;position:relative;overflow:hidden}
+        .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 30%,rgba(212,168,83,.12),transparent 55%);pointer-events:none}
+        .hero-inner{max-width:1100px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;position:relative}
+        .hero-label{display:inline-block;font-size:.8rem;letter-spacing:.15em;color:var(--gold);border:1px solid rgba(212,168,83,.4);padding:.35rem .9rem;border-radius:999px;margin-bottom:1.5rem}
+        .hero-title{font-size:2.6rem;font-weight:900;line-height:1.35;color:#fff;margin-bottom:1.5rem}
+        .hero-title .highlight{color:var(--gold)}
+        .hero-subtitle{color:#b0b0b0;font-size:1.05rem;margin-bottom:2rem}
+        .hero-cta{display:flex;gap:1rem;flex-wrap:wrap}
+        .btn{display:inline-block;padding:.9rem 2rem;border-radius:2px;font-weight:700;text-decoration:none;font-size:.95rem;transition:all .2s;border:1px solid transparent}
+        .btn-primary{background:var(--gold);color:var(--dark-bg);border-color:var(--gold)}
+        .btn-primary:hover{background:var(--gold-light);border-color:var(--gold-light);transform:translateY(-2px)}
+        .btn-outline{border-color:var(--gold);color:var(--gold)}
+        .btn-outline:hover{background:var(--gold);color:var(--dark-bg)}
+        .hero-image{position:relative;max-width:400px;margin:0 auto;width:100%}
+        .hero-image img{width:100%;aspect-ratio:3/5;object-fit:cover;object-position:center;border:1px solid var(--dark-border);display:block}
+        .hero-badge{position:absolute;bottom:-14px;right:-8px;background:var(--gold);color:var(--dark-bg);font-family:var(--font-display);font-weight:600;padding:.4rem 1rem;letter-spacing:.05em;font-size:.85rem}
+        @media(max-width:900px){.hero-inner{grid-template-columns:1fr}.hero-title{font-size:2rem}.hero{padding-top:calc(70px + 3rem)}}
+        @media(max-width:600px){.hero-title{font-size:1.65rem}.hero-subtitle br{display:none}}
 
-        body {
-            font-family: var(--font-body);
-            background-color: var(--color-bg-primary);
-            color: var(--color-text-primary);
-            line-height: 1.8;
-            font-size: 16px;
-        }
+        /* よくあるご相談（ダーク） */
+        .consult-note{text-align:center;color:#888;font-size:.85rem;margin-bottom:3rem}
+        .consult-phase{margin-bottom:2.5rem}
+        .consult-phase-title{font-family:var(--font-display);font-size:1.05rem;letter-spacing:.08em;color:var(--gold);margin-bottom:1rem;padding-left:.75rem;border-left:3px solid var(--gold)}
+        .consult-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+        .consult-card{display:flex;flex-direction:column;gap:.5rem;background:var(--dark-bg3);border:1px solid var(--dark-border);border-radius:4px;padding:1.5rem;text-decoration:none;transition:all .2s}
+        .consult-card:hover{border-color:var(--gold);transform:translateY(-4px)}
+        .consult-q{font-size:1.05rem;font-weight:700;color:#fff}
+        .consult-q::before{content:"「";color:var(--gold)}.consult-q::after{content:"」";color:var(--gold)}
+        .consult-a{font-size:.9rem;color:#a0a0a0;line-height:1.7;flex-grow:1}
+        .consult-link{font-size:.85rem;font-weight:700;color:var(--gold);margin-top:.5rem}
+        .consult-cta{text-align:center;margin-top:2.5rem}
+        @media(max-width:640px){.consult-grid{grid-template-columns:1fr}}
 
-        a {
-            color: var(--color-gold);
-            text-decoration: none;
-            transition: color var(--transition-fast);
-        }
+        /* 選ばれる理由（ライト） */
+        .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem}
+        .why-card{background:var(--light-bg2);border:1px solid var(--light-border);border-radius:4px;padding:2rem 1.5rem;transition:all .2s}
+        .why-card:hover{border-color:var(--gold-dark);transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.06)}
+        .why-icon{width:48px;height:48px;border-radius:50%;background:rgba(184,146,47,.12);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
+        .why-icon svg{width:24px;height:24px;color:var(--gold-dark)}
+        .why-card h3{font-size:1.05rem;font-weight:700;color:var(--light-text);margin-bottom:.75rem;line-height:1.5}
+        .why-card p{font-size:.9rem;color:var(--light-text2);line-height:1.7}
+        @media(max-width:1000px){.why-grid{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:600px){.why-grid{grid-template-columns:1fr}}
 
-        a:hover {
-            color: var(--color-gold-light);
-        }
+        /* 最新コラム（ライト） */
+        .column-lead{text-align:center;color:var(--light-text2);margin-bottom:3rem}
+        .column-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+        .column-card{display:flex;flex-direction:column;background:var(--light-bg2);border:1px solid var(--light-border);border-radius:4px;padding:1.5rem;text-decoration:none;transition:all .2s}
+        .column-card:hover{border-color:var(--gold-dark);transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.06)}
+        .column-card-category{display:inline-block;align-self:flex-start;background:rgba(184,146,47,.12);color:var(--gold-dark);font-size:.72rem;font-weight:600;letter-spacing:.05em;padding:.2rem .6rem;border-radius:2px;margin-bottom:.5rem}
+        .column-card-date{font-size:.8rem;color:var(--light-muted);margin-bottom:.6rem}
+        .column-card-title{font-size:1rem;font-weight:700;color:var(--light-text);line-height:1.5;margin-bottom:.75rem}
+        .column-card-excerpt{font-size:.88rem;color:var(--light-text2);line-height:1.7;flex-grow:1;margin-bottom:1rem}
+        .column-card-link{font-size:.85rem;font-weight:700;color:var(--gold-dark)}
+        .column-more{text-align:center;margin-top:2.5rem}
+        .column-more-btn{display:inline-block;padding:.9rem 2rem;border:1px solid var(--gold-dark);color:var(--gold-dark);border-radius:999px;font-weight:700;text-decoration:none;transition:all .2s}
+        .column-more-btn:hover{background:var(--gold-dark);color:#fff}
+        @media(max-width:900px){.column-grid{grid-template-columns:1fr}}
 
-        .header {
-            background: var(--color-bg-secondary);
-            border-bottom: 1px solid var(--color-border);
-            padding: var(--spacing-sm) var(--spacing-md);
-        }
+        /* CTA帯（ダーク） */
+        .cta-band{background:linear-gradient(135deg,#151310,#0a0a0a);border-top:1px solid var(--dark-border);border-bottom:1px solid var(--dark-border);padding:4.5rem 0;text-align:center}
+        .cta-band h2{font-size:1.75rem;font-weight:900;color:#fff;margin-bottom:.75rem}
+        .cta-band p{color:#a0a0a0;margin-bottom:1.75rem}
+        .cta-band .cta-note{font-size:.8rem;color:#777;margin-top:1.25rem;margin-bottom:0}
 
-        .header-inner {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        /* フッター（ダーク） */
+        .footer{background:var(--dark-bg2);color:#a0a0a0;padding:4rem 0 2rem}
+        .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1.3fr 1fr;gap:2.5rem;margin-bottom:3rem}
+        .footer-logo{font-family:var(--font-display);font-size:1.6rem;color:var(--gold);font-weight:700;margin-bottom:.5rem;letter-spacing:.05em}
+        .footer-tagline{font-size:.85rem;color:#888;line-height:1.7;margin-bottom:1rem}
+        .footer-social{display:flex;gap:.75rem}
+        .footer-social a{display:inline-flex;width:36px;height:36px;align-items:center;justify-content:center;border:1px solid var(--dark-border);border-radius:50%;color:#a0a0a0;transition:all .2s}
+        .footer-social a:hover{border-color:var(--gold);color:var(--gold)}
+        .footer-heading{font-size:.78rem;letter-spacing:.14em;color:var(--gold);font-weight:600;margin-bottom:1rem}
+        .footer-links{list-style:none}.footer-links li{margin-bottom:.6rem}
+        .footer-links a{color:#a0a0a0;text-decoration:none;font-size:.9rem}.footer-links a:hover{color:var(--gold)}
+        .footer-office p{font-size:.85rem;color:#a0a0a0;margin-bottom:.35rem;line-height:1.6}
+        .footer-office a{color:var(--gold);text-decoration:none}.footer-office a:hover{text-decoration:underline}
+        .footer-note{font-size:.8rem;color:#777}
+        .footer-bottom{border-top:1px solid var(--dark-border);padding-top:1.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;font-size:.8rem;color:#666}
+        .footer-bottom a{color:#888;text-decoration:none;margin-right:1.25rem}
+        .footer-bottom a:hover{color:var(--gold)}
+        @media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr}}
+        @media(max-width:600px){.footer-grid{grid-template-columns:1fr}}
 
-        .logo {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--color-text-primary);
-            text-decoration: none;
-        }
+        /* アニメーション */
+        .animate-on-scroll{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+        .animate-on-scroll.visible{opacity:1;transform:none}
 
-        .logo span {
-            color: var(--color-gold);
-        }
+        /* 下層ページ共通（ライト） */
+        .page-title{padding:calc(70px + 3.5rem) 0 2.5rem;background:var(--light-bg);border-bottom:1px solid var(--light-border);color:var(--light-text)}
+        .breadcrumb{font-size:.8rem;color:var(--light-muted);margin-bottom:1rem}
+        .breadcrumb a{color:var(--light-muted);text-decoration:none}.breadcrumb a:hover{color:var(--gold-dark)}
+        .page-heading{font-size:2.2rem;font-weight:900;color:var(--light-text);line-height:1.3;margin-bottom:.75rem}
+        .page-heading::after{content:"";display:block;width:48px;height:3px;background:var(--gold-dark);margin-top:1rem}
+        .page-lead{color:var(--light-text2);max-width:760px}
+        .section-light p{color:var(--light-text2)}
+        .section-light h2,.section-light h3{color:var(--light-text)}
+        .sub-heading{font-size:1.25rem;font-weight:700;color:var(--light-text);margin:2.5rem 0 1rem;padding-left:.75rem;border-left:3px solid var(--gold-dark)}
+        .card{background:var(--light-bg2);border:1px solid var(--light-border);border-radius:4px;padding:1.75rem}
+        @media(max-width:900px){.page-heading{font-size:1.75rem}}
 
-        .back-link {
-            font-size: 0.9rem;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: var(--spacing-lg) var(--spacing-md);
-        }
-
-        .page-title {
-            font-family: var(--font-display);
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: var(--spacing-sm);
-            color: var(--color-gold);
-        }
-
-        .last-updated {
-            font-size: 0.9rem;
-            color: var(--color-text-muted);
-            margin-bottom: var(--spacing-lg);
-        }
-
-        .section {
-            margin-bottom: var(--spacing-md);
-        }
-
-        .section h2 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: var(--spacing-sm);
-            padding-bottom: var(--spacing-xs);
-            border-bottom: 1px solid var(--color-border);
-        }
-
-        .section p {
-            color: var(--color-text-secondary);
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .section ul {
-            color: var(--color-text-secondary);
-            margin-left: 1.5rem;
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .section li {
-            margin-bottom: var(--spacing-xs);
-        }
-
-        .footer {
-            background: var(--color-bg-secondary);
-            border-top: 1px solid var(--color-border);
-            padding: var(--spacing-md);
-            text-align: center;
-        }
-
-        .footer-copyright {
-            font-size: 0.85rem;
-            color: var(--color-text-muted);
-        }
+        /* 規程ページ */
+        .legal h2{font-size:1.08rem;font-weight:700;color:var(--light-text);margin:2.75rem 0 .9rem;padding-left:.75rem;border-left:3px solid var(--gold-dark)}
+        .legal h2:first-of-type{margin-top:0}
+        .legal p{font-size:.93rem;line-height:1.95;margin-bottom:.9rem}
+        .legal ol,.legal ul{margin:0 0 1.1rem 1.4rem}
+        .legal li{font-size:.93rem;line-height:1.95;color:var(--light-text2);margin-bottom:.45rem}
+        .legal a{color:var(--gold-dark)}
+        .legal .updated{font-size:.82rem;color:var(--light-muted);margin-bottom:2.25rem}
+        .legal table{width:100%;border-collapse:collapse;margin:0 0 1.25rem}
+        .legal th,.legal td{border:1px solid var(--light-border);padding:.7rem .95rem;font-size:.88rem;line-height:1.85;text-align:left;vertical-align:top}
+        .legal th{background:#f0ece3;color:var(--light-text);font-weight:700;width:30%;white-space:nowrap}
+        .legal td{color:var(--light-text2)}
+        @media(max-width:600px){.legal th,.legal td{padding:.6rem .7rem;font-size:.84rem}.legal th{width:34%;white-space:normal}}
     </style>
 </head>
 <body>
-    <header class="header">
+
+    <header class="header" id="header">
         <div class="header-inner">
-            <a href="index.html" class="logo">BEN<span>FIT</span></a>
-            <a href="index.html" class="back-link">← トップページに戻る</a>
+            <a href="index.html" class="logo">BenFit</a>
+            <button class="mobile-menu-btn" aria-label="メニュー" aria-expanded="false">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="services.html">サービス</a></li>
+                <li><a href="pricing.html">料金・顧問契約</a></li>
+                <li><a href="columns.html">コラム</a></li>
+                <li><a href="resources.html">無料資料</a></li>
+                <li><a href="about.html">BenFitについて</a></li>
+                <li><a href="faq.html">よくある質問</a></li>
+                <li><a href="contact.html" class="nav-cta">相談する</a></li>
+            </ul>
         </div>
     </header>
 
-    <main class="container">
-        <h1 class="page-title">プライバシーポリシー</h1>
-        <p class="last-updated">最終更新日：2025年1月25日</p>
+    <main>
+        <section class="page-title">
+            <div class="container" style="max-width:860px">
+                <nav class="breadcrumb"><a href="index.html">ホーム</a> › プライバシーポリシー</nav>
+                <h1 class="page-heading">プライバシーポリシー</h1>
+                <p class="page-lead">当事業における個人情報の取扱いについて定めています。お問い合わせフォームの送信内容、アクセス解析、外部サービスの利用状況を明記しています。</p>
+            </div>
+        </section>
 
-        <div class="section">
-            <p>BenFit（以下「当事業」といいます）は、本ウェブサイト（以下「本サイト」といいます）における個人情報の取扱いについて、以下のとおりプライバシーポリシーを定めます。</p>
-        </div>
+        <section class="section section-light">
+            <div class="container legal" style="max-width:860px">
+                <p class="updated">制定：2025年1月25日／最終改定：2026年9月19日</p>
+                <p>BenFit（以下「当事業」といいます。運営者は弁護士 岩佐拳伍（大阪弁護士会所属）です）は、当事業が運営するウェブサイト <a href="index.html">benfit-osaka.github.io/benfit/</a>（以下「本サイト」といいます）における個人情報の取扱いについて、個人情報の保護に関する法律（以下「個人情報保護法」といいます）その他の関係法令を遵守し、以下のとおりプライバシーポリシー（以下「本ポリシー」といいます）を定めます。</p>
+                <p>なお、当事業の運営者は弁護士であり、法律相談その他の職務上知り得た秘密については、本ポリシーに定めるもののほか、弁護士法23条および弁護士職務基本規程23条に基づく守秘義務を負います。</p>
 
-        <div class="section">
-            <h2>第1条（個人情報の定義）</h2>
-            <p>「個人情報」とは、個人情報保護法に定める個人情報を指し、氏名、メールアドレス、電話番号、その他の記述等により特定の個人を識別できる情報をいいます。</p>
-        </div>
+                <h2>第1条（個人情報の定義）</h2>
+                <p>本ポリシーにおいて「個人情報」とは、個人情報保護法2条1項に定める個人情報をいい、生存する個人に関する情報であって、氏名、生年月日その他の記述等により特定の個人を識別することができるもの（他の情報と容易に照合することができ、それにより特定の個人を識別することができることとなるものを含みます）および個人識別符号が含まれるものをいいます。</p>
 
-        <div class="section">
-            <h2>第2条（個人情報の収集方法）</h2>
-            <p>当事業は、以下の方法により個人情報を収集することがあります。</p>
-            <ul>
-                <li>本サイトのお問い合わせフォームからのご入力</li>
-                <li>メール、LINE等によるお問い合わせ</li>
-                <li>サービスのお申込み時</li>
-            </ul>
-        </div>
+                <h2>第2条（取得する情報と取得方法）</h2>
+                <p>当事業は、以下の方法により個人情報を取得します。</p>
+                <ol>
+                    <li>本サイトのお問い合わせフォームへのご入力（お名前、メールアドレス、会社名・店舗名、お問い合わせ内容など、利用者が入力した情報）</li>
+                    <li>メール、電話、LINE WORKS その他の連絡手段によるお問い合わせ</li>
+                    <li>ご相談・ご契約の過程で、利用者からご提供いただく資料等に含まれる情報</li>
+                    <li>本サイトの閲覧に伴い自動的に送信される情報（IPアドレス、ブラウザの種類、閲覧ページ、閲覧日時、リファラ等。第7条・第8条をご参照ください）</li>
+                </ol>
 
-        <div class="section">
-            <h2>第3条（個人情報の利用目的）</h2>
-            <p>当事業は、収集した個人情報を以下の目的で利用いたします。</p>
-            <ul>
-                <li>お問い合わせへの回答・対応</li>
-                <li>サービスの提供・運営</li>
-                <li>サービスに関するご案内・お知らせの送付</li>
-                <li>契約の履行・料金の請求</li>
-                <li>本サイトの改善・新サービスの開発</li>
-                <li>その他、上記利用目的に付随する目的</li>
-            </ul>
-        </div>
+                <h2>第3条（利用目的）</h2>
+                <p>当事業は、取得した個人情報を以下の目的の範囲内で利用します。</p>
+                <ol>
+                    <li>お問い合わせ・ご相談への回答および対応</li>
+                    <li>法律事務の遂行、ご依頼いただいた業務の提供および連絡</li>
+                    <li>利益相反の有無の確認その他、受任の可否の判断</li>
+                    <li>契約の締結・履行および報酬のご請求</li>
+                    <li>当事業のサービスに関するご案内、資料の送付</li>
+                    <li>本サイトの改善、利用状況の分析および新たなサービスの検討</li>
+                    <li>法令に基づく対応、および上記各号に付随する目的</li>
+                </ol>
+                <p>当事業は、あらかじめ本人の同意を得ることなく、上記の利用目的の達成に必要な範囲を超えて個人情報を取り扱うことはありません。利用目的を変更する場合は、変更後の利用目的を本サイト上に公表します。</p>
 
-        <div class="section">
-            <h2>第4条（個人情報の第三者提供）</h2>
-            <p>当事業は、以下の場合を除き、個人情報を第三者に提供いたしません。</p>
-            <ul>
-                <li>ご本人の同意がある場合</li>
-                <li>法令に基づく場合</li>
-                <li>人の生命、身体または財産の保護のために必要な場合であって、ご本人の同意を得ることが困難な場合</li>
-                <li>国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合</li>
-            </ul>
-        </div>
+                <h2>第4条（第三者提供）</h2>
+                <p>当事業は、次のいずれかに該当する場合を除き、あらかじめ本人の同意を得ることなく個人データを第三者に提供しません。</p>
+                <ol>
+                    <li>法令に基づく場合</li>
+                    <li>人の生命、身体または財産の保護のために必要がある場合であって、本人の同意を得ることが困難であるとき</li>
+                    <li>公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合であって、本人の同意を得ることが困難であるとき</li>
+                    <li>国の機関もしくは地方公共団体またはその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、本人の同意を得ることにより当該事務の遂行に支障を及ぼすおそれがあるとき</li>
+                </ol>
 
-        <div class="section">
-            <h2>第5条（個人情報の安全管理）</h2>
-            <p>当事業は、個人情報の紛失、破壊、改ざん、漏洩等を防止するため、適切な安全管理措置を講じます。</p>
-        </div>
+                <h2>第5条（外部サービスへの委託）</h2>
+                <p>当事業は、利用目的の達成に必要な範囲で個人データの取扱いを外部に委託することがあります。この場合、委託先に対して必要かつ適切な監督を行います。本サイトで利用している主な外部サービスは次のとおりです。</p>
+                <table>
+                    <tr>
+                        <th>サービス</th>
+                        <th>用途と取扱われる情報</th>
+                    </tr>
+                    <tr>
+                        <td>GitHub Pages<br>（GitHub, Inc.）</td>
+                        <td>本サイトのホスティング。閲覧に伴いIPアドレス等のアクセスログが同社のサーバーに記録されます。</td>
+                    </tr>
+                    <tr>
+                        <td>Formspree<br>（Formspree, Inc.）</td>
+                        <td>お問い合わせフォームの送信処理。フォームにご入力いただいた内容は、同社のサーバーを経由して当事業のメールアドレスに送信されます。</td>
+                    </tr>
+                    <tr>
+                        <td>Google アナリティクス<br>（Google LLC）</td>
+                        <td>本サイトの利用状況の分析。第8条をご参照ください。</td>
+                    </tr>
+                    <tr>
+                        <td>LINE WORKS<br>（ワークスモバイルジャパン株式会社）</td>
+                        <td>利用者からのお問い合わせの受付および連絡。</td>
+                    </tr>
+                </table>
+                <p>これらのサービスの一部は、日本国外に所在する事業者により提供され、個人データが国外のサーバーに保存される場合があります。各サービスにおける個人情報の取扱いについては、各社のプライバシーポリシーをご確認ください。</p>
 
-        <div class="section">
-            <h2>第6条（個人情報の開示・訂正・削除）</h2>
-            <p>ご本人から個人情報の開示、訂正、削除等のご請求があった場合、ご本人確認の上、合理的な範囲で速やかに対応いたします。ご請求は下記のお問い合わせ先までご連絡ください。</p>
-        </div>
+                <h2>第6条（安全管理措置）</h2>
+                <p>当事業は、取り扱う個人データの漏えい、滅失または毀損の防止その他の安全管理のために、次の措置を講じます。</p>
+                <ol>
+                    <li>個人データを取り扱う端末および記録媒体へのアクセス制限（パスワード設定、機器の施錠管理等）</li>
+                    <li>通信の暗号化（本サイトはHTTPSにより配信しています）</li>
+                    <li>利用目的の達成に必要な範囲を超えた個人データの保有の回避および不要となった個人データの廃棄</li>
+                    <li>漏えい等の事案が発生した場合の報告体制の整備</li>
+                </ol>
+                <p>個人データの漏えい等が発生し、個人の権利利益を害するおそれが大きい場合には、個人情報保護法26条に基づき、個人情報保護委員会への報告および本人への通知を行います。</p>
 
-        <div class="section">
-            <h2>第7条（Cookieの使用について）</h2>
-            <p>本サイトでは、利便性の向上やアクセス解析のためにCookieを使用する場合があります。Cookieの使用を望まない場合は、ブラウザの設定により無効にすることができます。ただし、一部のサービスが正常に機能しなくなる可能性があります。</p>
-        </div>
+                <h2>第7条（Cookie等について）</h2>
+                <p>本サイトでは、利用状況の分析のためにCookieを使用する場合があります。Cookieは、ブラウザの設定により無効にすることができますが、その場合、本サイトの一部の機能が正常に動作しないことがあります。</p>
+                <p>また、本サイトの「無料資料」ページでは、チェックボックスの状態をご利用中のブラウザのローカルストレージに保存しています。この情報は利用者のブラウザ内にのみ保存され、当事業を含むいかなる第三者にも送信されません。ブラウザの閲覧データを削除することで、いつでも消去できます。</p>
 
-        <div class="section">
-            <h2>第8条（アクセス解析ツールについて）</h2>
-            <p>本サイトでは、Googleアナリティクス等のアクセス解析ツールを使用する場合があります。これらのツールはCookieを使用してデータを収集しますが、個人を特定する情報は含まれません。データ収集の詳細については、各サービスのプライバシーポリシーをご確認ください。</p>
-        </div>
+                <h2>第8条（アクセス解析ツールについて）</h2>
+                <p>本サイトでは、Google LLCが提供するアクセス解析ツール「Googleアナリティクス」を使用しています。Googleアナリティクスは、Cookieを利用して利用者の本サイト閲覧に関する情報を収集しますが、氏名・住所等により特定の個人を識別する情報は含まれません。</p>
+                <p>収集された情報は、Google社のプライバシーポリシーに基づいて管理されます。Googleアナリティクスによるデータ収集を望まない場合は、Googleが提供するオプトアウトアドオンを利用することにより無効にすることができます。</p>
 
-        <div class="section">
-            <h2>第9条（プライバシーポリシーの変更）</h2>
-            <p>当事業は、必要に応じて本プライバシーポリシーを変更することがあります。変更後のプライバシーポリシーは、本サイトに掲載した時点から効力を生じるものとします。</p>
-        </div>
+                <h2>第9条（開示・訂正・利用停止等の請求）</h2>
+                <p>当事業が保有する保有個人データについて、本人またはその代理人から、利用目的の通知、開示、内容の訂正・追加・削除、利用の停止・消去、第三者提供の停止の請求があった場合、ご本人であることを確認のうえ、法令に従い合理的な期間内に対応します。</p>
+                <p>ご請求は、第11条のお問い合わせ先までご連絡ください。なお、法令により当事業が開示等の義務を負わない場合には、これに応じられないことがあります。</p>
 
-        <div class="section">
-            <h2>第10条（お問い合わせ先）</h2>
-            <p>本プライバシーポリシーに関するお問い合わせは、下記までご連絡ください。</p>
-            <p>
-                事業者名：BenFit<br>
-                メールアドレス：kengo-iwasa@yglpc.com
-            </p>
-        </div>
+                <h2>第10条（本ポリシーの変更）</h2>
+                <p>当事業は、法令の改正または運用の変更に伴い、本ポリシーを変更することがあります。変更後の本ポリシーは、本サイトに掲載した時点から効力を生じるものとします。重要な変更を行う場合には、本サイト上でその旨をお知らせします。</p>
+
+                <h2>第11条（お問い合わせ先）</h2>
+                <p>本ポリシーおよび個人情報の取扱いに関するお問い合わせ、ならびに第9条に基づく各種請求の窓口は、以下のとおりです。</p>
+                <table>
+                    <tr><th>事業名</th><td>BenFit（ベンフィット）</td></tr>
+                    <tr><th>運営者</th><td>弁護士 岩佐 拳伍（いわさ けんご）／大阪弁護士会</td></tr>
+                    <tr><th>電話</th><td><a href="tel:0662028789">06-6202-8789</a>（直通）</td></tr>
+                    <tr><th>メール</th><td><a href="mailto:kengo-iwasa@yglpc.com">kengo-iwasa@yglpc.com</a></td></tr>
+                    <tr><th>フォーム</th><td><a href="contact.html">お問い合わせページ</a></td></tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="cta-band">
+            <div class="container animate-on-scroll">
+                <h2>ご不明な点は、お気軽にお問い合わせください。</h2>
+                <p>本ページの記載内容、個人情報の取扱いに関するご照会も承ります。</p>
+                <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
+                <p class="cta-note">初回のご相談は無料です。無理な勧誘は一切いたしません。</p>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
-        <p class="footer-copyright">&copy; 2025 BenFit. All Rights Reserved.</p>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">BenFit</div>
+                    <p class="footer-tagline">フィットネス事業者のための法務パートナー。<br>弁護士・現役のフィジーク競技者が運営。</p>
+                    <div class="footer-social">
+                        <a href="https://works.do/GkiX4R8" target="_blank" rel="noopener noreferrer" aria-label="LINE Works">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.349 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/lawyer_physique/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-heading">MENU</div>
+                    <ul class="footer-links">
+                        <li><a href="services.html">サービス</a></li>
+                        <li><a href="pricing.html">料金・顧問契約</a></li>
+                        <li><a href="columns.html">コラム</a></li>
+                        <li><a href="resources.html">無料資料</a></li>
+                        <li><a href="about.html">BenFitについて</a></li>
+                        <li><a href="faq.html">よくある質問</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-office">
+                    <div class="footer-heading">CONTACT</div>
+                    <p>弁護士 岩佐 拳伍（いわさ けんご）／大阪弁護士会</p>
+                    <p>TEL <a href="tel:0662028789">06-6202-8789</a>（直通）</p>
+                    <p>MAIL <a href="mailto:kengo-iwasa@yglpc.com">kengo-iwasa@yglpc.com</a></p>
+                    <p>対応地域：大阪（対面）／全国（Zoom）</p>
+                </div>
+                <div>
+                    <div class="footer-heading">RELATED</div>
+                    <ul class="footer-links">
+                        <li><a href="https://first72-osaka.github.io/" target="_blank" rel="noopener noreferrer">First72（刑事弁護）</a></li>
+                    </ul>
+                    <p class="footer-note" style="margin-top:.5rem">同じ弁護士が運営する<br>刑事事件専門サイトです。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>
+                    <a href="privacy-policy.html">プライバシーポリシー</a>
+                    <a href="terms.html">利用規約</a>
+                </div>
+                <div>&copy; 2026 BenFit. All Rights Reserved.</div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) header.classList.add('scrolled'); else header.classList.remove('scrolled');
+        });
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.getElementById('navLinks');
+        if (menuBtn && navLinks) {
+            menuBtn.addEventListener('click', () => {
+                const open = navLinks.classList.toggle('open');
+                menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+            });
+            navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+        }
+    </script>
+
 </body>
 </html>

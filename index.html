@@ -116,6 +116,16 @@
         .column-more{text-align:center;margin-top:2.5rem}
         .column-more-btn{display:inline-block;padding:.9rem 2rem;border:1px solid var(--gold-dark);color:var(--gold-dark);border-radius:999px;font-weight:700;text-decoration:none;transition:all .2s}
         .column-more-btn:hover{background:var(--gold-dark);color:#fff}
+        .dl-section{background:var(--light-bg2);border-top:1px solid var(--light-border)}
+        .dl-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2.5rem}
+        .dl-card{display:flex;flex-direction:column;background:var(--light-bg);border:1px solid var(--light-border);border-radius:4px;padding:2rem;text-decoration:none;transition:all .2s}
+        .dl-card:hover{border-color:var(--gold-dark);transform:translateY(-4px);box-shadow:0 10px 30px rgba(0,0,0,.06)}
+        .dl-num{font-family:var(--font-display);font-size:.78rem;letter-spacing:.12em;color:var(--gold-dark);margin-bottom:.75rem}
+        .dl-card h3{font-size:1.1rem;font-weight:700;color:var(--light-text);line-height:1.55;margin-bottom:.75rem}
+        .dl-card p{font-size:.9rem;line-height:1.8;color:var(--light-text2);flex:1}
+        .dl-link{margin-top:1.25rem;font-size:.88rem;font-weight:700;color:var(--gold-dark)}
+        .dl-note{text-align:center;font-size:.85rem;color:var(--light-muted);margin-top:2.25rem}
+        @media(max-width:800px){.dl-grid{grid-template-columns:1fr}}
         @media(max-width:900px){.column-grid{grid-template-columns:1fr}}
 
         /* CTA帯（ダーク） */
@@ -159,6 +169,7 @@
                 <li><a href="services.html">サービス</a></li>
                 <li><a href="pricing.html">料金・顧問契約</a></li>
                 <li><a href="columns.html">コラム</a></li>
+                <li><a href="resources.html">無料資料</a></li>
                 <li><a href="about.html">BenFitについて</a></li>
                 <li><a href="faq.html">よくある質問</a></li>
                 <li><a href="contact.html" class="nav-cta">相談する</a></li>
@@ -331,6 +342,29 @@
         </div>
     </section>
 
+    <!-- 無料資料（ライト） -->
+    <section class="section section-light dl-section" id="resources">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">無料資料</h2>
+            <p class="column-lead animate-on-scroll">ご相談の前に、自社の状況を整理していただくための資料です。会員登録もメールアドレスの入力も不要です。</p>
+            <div class="dl-grid">
+                <a href="resource-terms-check.html" class="dl-card animate-on-scroll">
+                    <div class="dl-num">RESOURCE 01</div>
+                    <h3>会員規約セルフチェック（32項目）</h3>
+                    <p>ひな形のまま使っている会員規約には、消費者契約法によって無効になる条項が残っていることがあります。中途解約の違約金、免責条項、特定商取引法の該当性まで確認できます。</p>
+                    <span class="dl-link">チェックを始める →</span>
+                </a>
+                <a href="resource-gym-opening.html" class="dl-card animate-on-scroll">
+                    <div class="dl-num">RESOURCE 02</div>
+                    <h3>ジム開業 法務チェックリスト（41項目）</h3>
+                    <p>開業でつまずくのは、知らなかった手続よりも「後から直せない契約と体制」です。物件契約、トレーナーの雇用形態、広告表示、フランチャイズ契約までを整理しました。</p>
+                    <span class="dl-link">チェックを始める →</span>
+                </a>
+            </div>
+            <p class="dl-note animate-on-scroll">ブラウザ上でそのままチェックでき、印刷・PDF保存にも対応しています。入力内容が送信されることはありません。</p>
+        </div>
+    </section>
+
     <!-- 相談CTA帯（ダーク） -->
     <section class="cta-band" id="cta">
         <div class="container animate-on-scroll">
@@ -363,6 +397,7 @@
                         <li><a href="services.html">サービス</a></li>
                         <li><a href="pricing.html">料金・顧問契約</a></li>
                         <li><a href="columns.html">コラム</a></li>
+                        <li><a href="resources.html">無料資料</a></li>
                         <li><a href="about.html">BenFitについて</a></li>
                         <li><a href="faq.html">よくある質問</a></li>
                         <li><a href="contact.html">お問い合わせ</a></li>
